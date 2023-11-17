@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+    <link type="text/css" rel="stylesheet" href="../css/mainCalendar.css">
+</head>
+<body onload="presentMonth()">
+    <header>
+        <div id="year">
+            <button class="yearButton"><img src="../image/year_left.png"></button>
+            <h1 id="year">2023</h1>
+            <button class="yearButton"><img src="../image/year_right.png"></button>
+        </div>
+        <div id="months">
+            <button class="monthButton" value="1" onclick="daysOfMonth(this)">1</button>
+            <button class="monthButton" value="2" onclick="daysOfMonth(this)">2</button>
+            <button class="monthButton" value="3" onclick="daysOfMonth(this)">3</button>
+            <button class="monthButton" value="4" onclick="daysOfMonth(this)">4</button>
+            <button class="monthButton" value="5" onclick="daysOfMonth(this)">5</button>
+            <button class="monthButton" value="6" onclick="daysOfMonth(this)">6</button>
+            <button class="monthButton" value="7" onclick="daysOfMonth(this)">7</button>
+            <button class="monthButton" value="8" onclick="daysOfMonth(this)">8</button>
+            <button class="monthButton" value="9" onclick="daysOfMonth(this)">9</button>
+            <button class="monthButton" value="10" onclick="daysOfMonth(this)">10</button>
+            <button class="monthButton" value="11" onclick="daysOfMonth(this)">11</button>
+            <button class="monthButton" value="12" onclick="daysOfMonth(this)">12</button>
+        </div>
+    </header>
+    <hr id="divideLine">
+    <nav>
+        <div id="navShortMenu">
+            <img class="menuIcon" src="../image/shortMenu.png" onclick="showHidden()">
+        </div>
+       
+        <div id="hidden">
+            <img id="cancelMenuIcon" src="../image/close.png" onclick="closeMenu()">
+            <h2>이소현 님 (팀장)</h2>
+            <span class="userInfoFont">ID : sohyunxxi</span>
+            <span class="userInfoFont">부서명 : sohyunxxi</span>
+            <span class="userInfoFont">전화번호 : 010-3243-1578</span>
+            <div id="buttonBox">
+                <button class="navButton"><a class="noColor" href="showInfo.html">정보 수정</a></button>
+                <button class="navButton"><a class="noColor" href="login.html">로그아웃</a></button>
+            </div>
+            <hr class="lineColor">
+            <span id="teamList">팀원 목록</span>
+            <hr class="lineColor">
+            <div id="peopleBox">
+                <span class="navInfo"><a class="noColor" href="j.html">강정연 (gongsil)</a></span>
+                <span class="navInfo"><a class="noColor" href="k.html">왕준혁 (king)</a></span>
+                <span class="navInfo"><a class="noColor" href="h.html">조희주 (heeju)</a></span>
+            </div>
+            <img id="backIcon" src="../image/back.png">
+        </div>
+    </nav>
+    <main>
+       
+    </main>
+    <div id="modal">
+
+        <div id="innerModal">
+            <span class="close" onclick="closeModalEvent()">&times;</span>
+            <p id="modalDate">모달 날짜 나오는곳</p>
+            <hr>
+            <hr>
+            <div>
+                <div>
+                    <span>11 : 30</span>
+                    <span>정연 팀원 밥 약속</span>
+                    <div>
+                        <button>수정</button>
+                        <button>삭제</button>
+                    </div>
+                </div>
+                <div>
+                    <span>15 : 30</span>
+                    <span>준혁 팀원 밥 약속</span>
+                    <div>
+                        <button>수정</button>
+                        <button>삭제</button>
+                    </div>
+                </div>
+                <div>
+                    <span>18 : 30</span>
+                    <span>희주 팀원 밥 약속</span>
+                    <div>
+                        <button>수정</button>
+                        <button>삭제</button>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <span>일정 추가</span>
+            <span>일정 시간</span>
+            <span>일정 내용</span>
+            <textarea placeholder="최대 50자까지 적을 수 있습니다. " cols="25" rows="5">
+        </div>
+        
+       </div>
+    <div id="blackBox">
+            
+    </div>
+    
+
+    <script src="../js/calender.js"></script>
+</body>
+</html>
