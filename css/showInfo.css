@@ -45,7 +45,7 @@ body{
     border-radius: 10px;
     border: 1px solid #70AD47;
 }
-#nameFont{
+.nameFont{
     margin-left:30px;
 }
 #idFont{
@@ -177,3 +177,142 @@ footer{
     margin-top: 5px;
     margin-bottom: 5px;
 }
+@media screen and (min-width: 1200px) {
+    /* 여기에 PC 버전의 스타일을 정의합니다. */
+
+  }
+  
+  /* 태블릿 버전 */
+  /* 480px 이상 ~ 1200px 미만일 때 적용 */
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    /* 여기에 태블릿 버전의 스타일을 정의합니다. */
+    #mainFont{
+        padding-top:50px;
+        font-size:50px;
+    }
+    .nameFont{
+        margin-left:15px;
+    }
+    #idBox{
+        margin-left:16px;
+        width:200px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+    }
+    #pwBox{
+        width:200px;
+        height: 40px;
+        margin-left:12.5px;
+        margin-right:10px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+    }
+    #nameBox{
+        margin-left:25px;
+        margin-right: 15px;
+        width:200px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+    }
+    #button{
+        width:120px;
+        height: 50px;
+        background-color: #70AD47;
+        border-radius: 7.5px;
+        color:#FFFFFF;
+        font-size: 15px;
+        border-color: #70AD47;
+        margin-top: 15px;
+    }
+    .insertBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 30px;
+        font-size:23px;
+    }
+    #checkButton{
+        width:130px;
+        height: 40px;
+        background-color: #70AD47;
+        color: #FFFFFF;
+        border: 1px solid #70AD47;
+        border-radius: 13px;
+        font-size: 14px;
+        margin-left:20px;
+    }
+    .footerButtons{
+        width:140px;
+        height: 50px;
+        background-color: #70AD47;
+        border-radius: 15px;
+        color:#FFFFFF;
+        font-size: 20px;
+        border-color: #70AD47;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    
+  }
+  
+  /* 모바일 버전 */
+  /* 320px 이상 ~ 480px 미만일 때 적용 */
+  @media screen and (max-width: 479px) {
+    /* 여기에 모바일 버전의 스타일을 정의합니다. */
+        
+    #mainFont{
+        padding-top:50px;
+        font-size:40px;
+    }
+    .nameFont{
+        margin-left:12.5px;
+    }
+  
+    #button{
+        width:120px;
+        height: 50px;
+        background-color: #70AD47;
+        border-radius: 7.5px;
+        color:#FFFFFF;
+        font-size: 15px;
+        border-color: #70AD47;
+        margin-top: 15px;
+    }
+    .insertBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 30px;
+        font-size:23px;
+    }
+    #checkButton{
+        width:110px;
+        height: 40px;
+        background-color: #70AD47;
+        color: #FFFFFF;
+        border: 1px solid #70AD47;
+        border-radius: 13px;
+        font-size: 12px;
+        margin-left:15px;
+    }
+    .footerButtons{
+        width:110px;
+        height: 40px;
+        background-color: #70AD47;
+        border-radius: 15px;
+        color:#FFFFFF;
+        font-size: 12px;
+        border-color: #70AD47;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    #backImg{
+        width:55px;
+        height:55px;
+        background-color: transparent;
+        border-radius: 27.5px;
+        margin-right:40%;
+    }
+  }

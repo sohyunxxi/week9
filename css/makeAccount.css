@@ -116,7 +116,7 @@ body{
     
 }
 #selectTeam{
-    margin-left:83px;
+    margin-left:43px;
     margin-right:20px;
 }
 #selectBox{
@@ -125,4 +125,204 @@ body{
 }
 .selectFont{
     font-size : 25px;
+    margin-right:170px;
 }
+.fontSize{
+    font-size:30px;
+}
+
+
+@media screen and (min-width: 1200px) {
+    /* 여기에 PC 버전의 스타일을 정의합니다. */
+
+  }
+  
+  /* 태블릿 버전 */
+  /* 480px 이상 ~ 1200px 미만일 때 적용 */
+  @media screen and (min-width: 480px) and (max-width: 1199px) {
+    /* 여기에 태블릿 버전의 스타일을 정의합니다. */
+    #mainFont{
+        padding-top:50px;
+        font-size:50px;
+    }
+    #nameFont{
+        margin-left:15px;
+    }
+    #idBox{
+        margin-left:16px;
+        width:200px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+    }
+    #pwBox{
+        width:200px;
+        height: 40px;
+        margin-left:12.5px;
+        margin-right:18px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+    }
+    #comfirmPwBox{
+        width:200px;
+        height: 40px;
+        margin-left:20px;
+        margin-right:70px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+        text-align: center;
+    }
+    #nameBox{
+        margin-left:25px;
+        margin-right: 15px;
+        width:200px;
+        height: 40px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+    }
+    #numBox{
+        width:200px;
+        height: 40px;
+        margin-left:25px;
+        margin-right:40px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+        text-align: center;
+    }
+    #button{
+        width:120px;
+        height: 50px;
+        background-color: #70AD47;
+        border-radius: 7.5px;
+        color:#FFFFFF;
+        font-size: 15px;
+        border-color: #70AD47;
+        margin-top: 15px;
+    }
+    #checkButton{
+        width:100px;
+        height: 37px;
+        background-color: #70AD47;
+        color: #FFFFFF;
+        border: 1px solid #70AD47;
+        border-radius: 15px;
+        font-size: 14px;
+    }
+    .fontSize{
+        font-size:20px;
+    }
+    .selectFont{
+        font-size : 18px;
+        margin-right:180px;
+    }
+    #selectBox{
+        font-size : 18px;
+        margin-right: 165px;
+    }
+
+  
+  }
+  
+  /* 모바일 버전 */
+  /* 320px 이상 ~ 480px 미만일 때 적용 */
+  @media screen and (max-width: 479px) {
+    /* 여기에 모바일 버전의 스타일을 정의합니다. */
+    #mainFont{
+        padding-top:50px;
+        font-size:30px;
+    }
+    #nameFont{
+        margin-left:0px;
+    }
+    #nameBox{
+        margin-left:30px;
+        margin-right: 15px;
+        width:125px;
+        height: 25px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+    }
+    #loginBox{
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        flex-direction: column;
+        font-size: 30px;
+    }
+    #idBox{
+        margin-left:16px;
+        width:125px;
+        height: 25px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+    }
+    #pwBox{
+        width:140px;
+        height: 25px;
+        margin-left:12.5px;
+        margin-right:10px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+    }
+    #comfirmPwBox{
+        width:140px;
+        height: 25px;
+        margin-left:12.5px;
+        margin-right:10px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+        text-align: center;
+    }
+    #numBox{
+        width:140px;
+        height: 25px;
+        margin-left:25px;
+        margin-right:20px;
+        border-radius: 10px;
+        border: 1px solid #70AD47;
+        text-align: center;
+    }
+    #button{
+        width:120px;
+        height: 50px;
+        background-color: #70AD47;
+        border-radius: 7.5px;
+        color:#FFFFFF;
+        font-size: 15px;
+        border-color: #70AD47;
+        margin-top: 15px;
+    }
+    #checkButton{
+        width:100px;
+        height: 37px;
+        background-color: #70AD47;
+        color: #FFFFFF;
+        border: 1px solid #70AD47;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+    .fontSize{
+        font-size:15px;
+    }
+    #idFont{
+        margin-left:0;
+    }
+    .selectFont{
+        font-size : 15px;
+        margin-right:50px;
+    }
+    #selectBox{
+        font-size : 18px;
+        margin-right: 20px;
+    }
+    #selectTeam{
+        margin-right:20px;
+        margin-left: 0px;
+        
+    }
+    #selectOcc {
+        margin-left: 0px;
+        margin-right: 20px;
+    }
+  }
+  

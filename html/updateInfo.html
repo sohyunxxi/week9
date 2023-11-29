@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>내 정보 보기</title>
+    <title>내 정보 수정</title>
     <link type="text/css" rel="stylesheet" href="../css/updateInfo.css">
 </head>
 <body>
@@ -23,11 +23,11 @@
             </div>
             <div id="pwInsertBox">
                 <span id="pwFont">비밀번호 : </span>
-                <input id="pwBox" placeholder="4자 이상 16자 이하로 입력해주세요." value="1234메롱"></span>
+                <input id="pwBox" type="password" placeholder="4자 이상 16자 이하로 입력해주세요." value="1234메롱"></span>
             </div>
             <div id="confirmInsertBox">
                 <span>재확인 비밀번호 : </span>
-                <input id="confirmPwBox" placeholder="4자 이상 16자 이하로 입력해주세요." value="1234메롱"></span>
+                <input id="confirmPwBox" type="password" placeholder="4자 이상 16자 이하로 입력해주세요." value="1234메롱"></span>
             </div>
             <div id="telInsertBox">
                 <span id="telFont">전화번호 : </span>
@@ -55,6 +55,6 @@
             <button class="footerButtons" onclick="updateEvent()">완료</button>
         </div>
     </footer>
-    <script src="../js/updateInfo.js"></script>
+    <script src="../js/showInfo.js"></script>
 </body>
 </html>

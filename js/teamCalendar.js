@@ -133,7 +133,6 @@ function updatePlanEvent(event) {
     var timeSpan = parentDiv.querySelector('.planTime');
     var eventSpan = parentDiv.querySelector('.planContext');
     var editButton = parentDiv.querySelector('.modalButtons button');
-    var modalButtonsHidden = parentDiv.querySelector('.modalButtonsHidden');
     if (timeSpan.style.display === 'none') {
         // 이미 수정 중인 경우, 저장 처리
         var hourInput = parentDiv.querySelector('.modalTimeNum.hour');
@@ -146,7 +145,6 @@ function updatePlanEvent(event) {
         eventSpan.style.display = '';
         hourInput.style.display = 'inline';
         minuteInput.style.display = 'inline';
-        modalButtonsHidden.style.display="flex";
 
         // input text와 textarea 제거
         parentDiv.removeChild(hourInput);
@@ -183,7 +181,6 @@ function updatePlanEvent(event) {
         // 기존 요소 숨기기
         timeSpan.style.display = 'none';
         eventSpan.style.display = 'none';
-        modalButtonsHidden.style.display="none";
 
         // 생성한 요소 추가
         parentDiv.insertBefore(hourInput, timeSpan);
